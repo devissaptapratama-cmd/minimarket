@@ -20,6 +20,10 @@
                             <x-nav-link :href="route('admin.dashboard')" :active="request()->routeIs('admin.dashboard')">
                                 Dashboard Admin
                             </x-nav-link>
+
+                            <x-nav-link :href="route('products.index')" :active="request()->routeIs('products.*')">
+                                Products
+                            </x-nav-link>
                         @elseif(auth()->user()->role === 'kasir')
                             <x-nav-link :href="route('kasir.dashboard')" :active="request()->routeIs('kasir.dashboard')">
                                 Dashboard Kasir
