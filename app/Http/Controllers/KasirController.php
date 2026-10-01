@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 class KasirController extends Controller
 {
     public function dashboard(){
-        return view("kasir.dashboard");
+        // return view("kasir.dashboard");
+        return view('kasir.kasir');
     }
 }
